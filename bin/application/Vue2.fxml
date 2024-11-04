@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="589.0" prefWidth="848.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.VueController">
+   <children>
+      <ImageView fx:id="imageVeloSel" fitHeight="307.0" fitWidth="372.0" layoutX="71.0" layoutY="100.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/ville.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="594.0" layoutY="117.0" text="Choissisez votre couleur" />
+      <Label fx:id="prixTotal" layoutX="276.0" layoutY="457.0" prefHeight="21.0" prefWidth="122.0" text="Prix : " />
+      <Label layoutX="598.0" layoutY="234.0" prefHeight="21.0" prefWidth="169.0" text="Choissisez votre taille" />
+      <CheckBox layoutX="586.0" layoutY="369.0" mnemonicParsing="false" text="Oui" />
+      <TextArea layoutX="582.0" layoutY="401.0" prefHeight="100.0" prefWidth="176.0" />
+      <CheckBox layoutX="586.0" layoutY="509.0" mnemonicParsing="false" prefHeight="21.0" prefWidth="72.0" text="Non" />
+      <ComboBox fx:id="comboOptions" layoutX="582.0" layoutY="155.0" prefWidth="150.0" promptText="Couleur" />
+      <ComboBox fx:id="comboOptions2" layoutX="582.0" layoutY="279.0" prefWidth="150.0" promptText="Taille" />
+      <Button fx:id="Calculprix" layoutX="105.0" layoutY="452.0" mnemonicParsing="false" onAction="#CalculerPrix" text="Calculer le prix total" />
+   </children>
+</AnchorPane>
